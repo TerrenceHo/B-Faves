@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         todayAdapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, today);
         todayItems.setAdapter(todayAdapter);
-        todayAdapter.add("Spiralini Alfredo");
+        todayAdapter.add("Meatball Pizza");
 
 
 
@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         savedItems.setAdapter(itemsAdapter);
         itemsAdapter.add("Chipotle Chicken Bowl");
         itemsAdapter.add("Spiralini Alfredo");
+        itemsAdapter.add("Shrimp Tortellini");
 
         // Setup remove listener method call
         setupListViewListener();
