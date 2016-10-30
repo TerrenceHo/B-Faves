@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etNewItem"
+            android:layout_alignTop="@+id/btnAddItem"
+            android:hint="Enter a new item"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/btnAddItem"
+            android:layout_toStartOf="@+id/btnAddItem"
+            android:layout_alignParentTop="true" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Item"
+            android:id="@+id/btnAddItem"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="onAddItem" />
+
+
+        <TextView
+            android:text="AVAILABLE TODAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/todayHeader"
+            android:textColor="#0f123f"/>
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/todayItems"
+            android:layout_below="@+id/btnAddItem"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:text="YOUR FAVORITES"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/savedHeader"
+            android:textColor="#0f123f"/>
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/savedItems"
+            android:layout_below="@+id/todayItems"
+            android:layout_alignParentStart="true" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
