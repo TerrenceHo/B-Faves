@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         savedItems.setAdapter(itemsAdapter);
         itemsAdapter.add("Chipotle Chicken Bowl");
         itemsAdapter.add("Spiralini Alfredo");
-        itemsAdapter.add("Shrimp Tortellini");
+        itemsAdapter.add("Meatball Pizza");
 
         // Setup remove listener method call
         setupListViewListener();
